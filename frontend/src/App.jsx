@@ -8,7 +8,7 @@ import { Button } from './components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from './components/ui/card';
 import { Skeleton } from './components/ui/skeleton';
 
-const API_BASE = 'http://localhost:5000/api'
+const API_BASE = import.meta.env.VITE_API_URL;
 
 const App = () => {
   const [users, setUsers] = useState([]);
